@@ -5,7 +5,7 @@ import { FunctionComponent } from 'react';
 
 const Scw: FunctionComponent<IScwProps> =(props) => {
   return (
-    <div>Hello</div>
+    <div className={styles.container}>Hello</div>
   );
 }
 export default Scw;
