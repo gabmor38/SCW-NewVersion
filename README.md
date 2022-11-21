@@ -8,8 +8,8 @@ Short summary on functionality and used technologies.
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.15-green.svg)
-
+![version](https://img.shields.io/badge/version-1.16-green.svg)
+![Node.js](https://img.shields.io/badge/Node.js.v16-green.svg)
 
 ## Applies to
 
