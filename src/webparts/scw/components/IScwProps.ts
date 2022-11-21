@@ -1,4 +1,4 @@
 export interface IScwProps {
-  description: string;
-  environmentMessage: string;
+  description?: string;
+  environmentMessage?: string;
 }
