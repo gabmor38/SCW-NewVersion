@@ -18,7 +18,6 @@ export interface IScwWebPartProps {
 
 export default class ScwWebPart extends BaseClientSideWebPart<IScwWebPartProps> {
 
-  private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 
   public render(): void {
@@ -26,10 +25,8 @@ export default class ScwWebPart extends BaseClientSideWebPart<IScwWebPartProps> 
       Scw,
       {
         description: this.properties.description,
-        isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
-        hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+
       }
     );
 
@@ -75,7 +72,7 @@ export default class ScwWebPart extends BaseClientSideWebPart<IScwWebPartProps> 
       return;
     }
 
-    this._isDarkTheme = !!currentTheme.isInverted;
+    
     const {
       semanticColors
     } = currentTheme;
