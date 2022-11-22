@@ -8,6 +8,7 @@ import Second from './SecondStep/Second';
 import Third from './ThirdStep/Third';
 import Four from './FourStep/Four';
 import Last from './LastStep/Last';
+import { PrimaryButton, Stack } from '@fluentui/react';
 
 
 
@@ -21,6 +22,10 @@ const Scw: FunctionComponent<IScwProps> =(props) => {
       <Third/>
       <Four/>
       <Last/>
+      <Stack>
+        <PrimaryButton text='Previous'/>
+        <PrimaryButton text='Next'/>
+      </Stack>
     </>
     
   );
