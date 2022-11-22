@@ -5,6 +5,9 @@ import { FunctionComponent } from 'react';
 import ProgressBar from './ProgressBar/ProgressBar';
 import First from './FirstStep/First';
 import Second from './SecondStep/Second';
+import Third from './ThirdStep/Third';
+import Four from './FourStep/Four';
+import Last from './LastStep/Last';
 
 
 
@@ -15,6 +18,9 @@ const Scw: FunctionComponent<IScwProps> =(props) => {
       <ProgressBar/>
       <First/>
       <Second/>
+      <Third/>
+      <Four/>
+      <Last/>
     </>
     
   );
