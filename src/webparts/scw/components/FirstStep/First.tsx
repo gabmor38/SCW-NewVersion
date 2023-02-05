@@ -16,18 +16,39 @@ const First: FunctionComponent<IScwProps> = (props) => {
         <p>
           You can choose between two options for your community template.
         </p>
+        <div className={styles.cardContainer}>
           <div className={styles.choiceCard}>
-            <label>
-              <input type="radio" value="libraryTemplate" />
-              Library Template
-            </label>
+            <div className={styles.cardHeading}>
+              <input type="radio" value="library" />
+              <label>Library Template</label>
+            </div>
+            <div className={styles.cardBody}>
+              <p>This template is for communities that operate as repositories of information. This template includes a homepage, an about page and a document library</p>
+              <ul>
+                <li>Homepage</li>
+                <li>About us</li>
+                <li>Document Library</li>
+              </ul>
+            </div>
           </div>
           <div className={styles.choiceCard}>
-              <label>
-                <input type="radio" value="collaborationTemplate"/>
-               Collaboration Template
-             </label>
+            <div className={styles.cardHeading}>
+              <input type="radio" value="collaboration" />
+              <label>Collaboration Template</label>
             </div>
+            <div className={styles.cardBody}>
+              <p>This template is for communities that want to encourage collaboration, like a network or community of practice. This template includes a homepage, an about page, an events page, a library and more.</p>
+              <ul>
+                <li>Homepage</li>
+                <li>About us</li>
+                <li>Document Library</li>
+                <li>Events</li>
+                <li>Members</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
       </section> 
     </Stack>
   );
